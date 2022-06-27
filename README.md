@@ -1,4 +1,4 @@
-# 💫 About Me:
+# 💫 About Me
 Heya! I'm Saahil, a full-stack developer and a junior at IIT Jodhpur. My interests are Web Development and DevOps. I'm currently learning Apache Kafka, Redis and Kubernetes.
 
 
