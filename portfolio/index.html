@@ -31,6 +31,7 @@
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="assets/js/utils.js"></script>
   </head>
 
   <body>
@@ -40,24 +41,33 @@
       <div class="d-flex flex-column">
         <div class="profile">
           <img
-            src="assets/img/profile-img.jpg"
-            alt=""
+            alt="Profile Photo"
             class="img-fluid rounded-circle"
           />
           <h1 class="text-light"><a href="#">Saahil Bhavsar</a></h1>
           <div class="social-links mt-3 text-center">
-            <a href="https://twitter.com/saahil_xan_t_w" class="twitter"
+            <a
+              href="https://twitter.com/SaahilNotSahil"
+              class="twitter"
+              target="blank"
               ><i class="bx bxl-twitter"></i
             ></a>
-            <a href="https://www.facebook.com/saahil.xtw/" class="facebook"
+            <a
+              href="https://www.facebook.com/saahil.xtw/"
+              class="facebook"
+              target="blank"
               ><i class="bx bxl-facebook"></i
             ></a>
-            <a href="https://github.com/XanderWatson" class="github"
+            <a
+              href="https://github.com/XanderWatson"
+              class="github"
+              target="blank"
               ><i class="bx bxl-github"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/saahil-bhavsar/"
               class="linkedin"
+              target="blank"
               ><i class="bx bxl-linkedin"></i
             ></a>
           </div>
@@ -73,6 +83,11 @@
             <li>
               <a href="#about" class="nav-link scrollto"
                 ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link scrollto"
+                ><i class="bx bx-file-blank"></i> <span>Skills</span></a
               >
             </li>
             <li>
@@ -102,26 +117,19 @@
     </section>
 
     <main id="main">
-      <section id="about" class="about">
+      <section id="about" class="about section-bg" style="height: 50vh;">
         <div class="container">
           <div class="section-title">
             <h2>About</h2>
-            <p>
-              Heya! I'm Saahil, an undergraduate student at Indian Institute of
-              Technology, Jodhpur. I'm a web developer, with interest in
-              Cybersecurity, Blockchain and DevOps. I write clean and modular
-              code, and exploring Test-driven Development (TDD). I'm a hardcore
-              Linux enthusiast, and I love to learn new technologies.
-            </p>
+            <p id="about-text"></p>
           </div>
 
           <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
               <center>
                 <img
-                  src="assets/img/profile-img.jpg"
                   class="img-fluid"
-                  alt=""
+                  alt="Profile Photo"
                 />
               </center>
               <br /><br /><br />
@@ -140,32 +148,28 @@
                     line-height: 25px;
                   "
                   href="https://drive.google.com/file/d/1XDW9yKiGhB6eiMXhqs7AbuuBIH5dySE5/view?usp=sharing"
-                  target="_blank"
+                  target="blank"
                   >Resume</a
                 >
               </center>
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>Web Developer</h3>
+              <h3 id="about-title"></h3>
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Website:</strong>
-                      <span
-                        ><a href="https://www.saahilb.ml"
-                          >www.saahilb.ml</a
-                        ></span
-                      >
+                      <span><a id="website" target="blank">www.saahilb.ml</a></span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>Phone:</strong> <span>+91 93252 20982</span>
+                      <strong>Phone:</strong> <span id="phone"></span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>City:</strong> <span>Nashik, India</span>
+                      <strong>City:</strong> <span id="city"></span>
                     </li>
                   </ul>
                 </div>
@@ -173,142 +177,63 @@
                   <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>19</span>
+                      <span id="age"></span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>College:</strong> <span>IIT Jodhpur</span>
+                      <strong>College:</strong> <span id="college"></span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>Email:</strong> <span>bhavsar.2@iitj.ac.in</span>
+                      <strong>Email:</strong> <span id="email"></span>
                     </li>
                   </ul>
                 </div>
               </div>
               <br />
-              <p>I use Arch, btw :)</p>
+              <p id="extra"></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="skills section-bg">
+      <section id="skills" class="skills section-bg" style="height: 50vh;">
         <div class="container">
           <div class="section-title">
             <h2>Skills</h2>
             <ul>
               <li>
-                <h4>Tools and Technologies</h4>
-                <p>Docker, Redis, Nginx, MongoDB, Linux</p>
+                <h4>Languages</h4>
+                <p id="languages"></p>
               </li>
               <li>
-                <h4>Frameworks</h4>
-                <p>Flutter, Django, React.js, Flask, Go Fiber</p>
+                <h4>DevOps</h4>
+                <p id="devops"></p>
               </li>
               <li>
-                <h4>Programming Languages</h4>
-                <p>Python, Golang, Javascript, Bash, C, C++, HTML5, CSS3/p></p>
+                <h4>Web and App Dev</h4>
+                <p id="dev"></p>
               </li>
-
               <li>
                 <h4>Familiar</h4>
-                <p>Kubernetes, Express.js, GraphQL, Vue.js</p>
+                <p id="familiar"></p>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="portfolio" class="portfolio section-bg">
+      <section id="portfolio" class="portfolio" style="height: 100vh;">
         <div class="container">
           <div class="section-title">
             <h2>Portfolio</h2>
             <p>Here are some of my projects -</p>
           </div>
-
           <div
             class="row portfolio-container"
             data-aos="fade-up"
             data-aos-delay="100"
-          >
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/XanderWatson/the-key-thing"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="The Key Thing"
-                    ><i class="bx bxl-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/devlup-labs/gymkhana-sac"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="IITJ Student Activity Council Website"
-                    ><i class="bx bxl-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a
-                    href="https://github.com/devlup-labs/meet-scheduler"
-                    data-gallery="portfolioGallery"
-                    class="portfolio-lightbox"
-                    title="Meet Scheduler"
-                    ><i class="bx bxl-github"></i
-                  ></a>
-                  <a
-                    href="https://chrome.google.com/webstore/detail/meet-scheduler/djlpjopjnkojimgiaefgbenbbkkknnln?hl=en"
-                    title="Extension Link"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-links">
-                  <a href="https://varchas22.in" title="Varchas"
-                    ><i class="bx bx-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          ></div>
         </div>
       </section>
     </main>
