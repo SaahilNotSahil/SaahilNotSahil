@@ -1,4 +1,4 @@
-api_base_url = "https://devluplabs.centralindia.cloudapp.azure.com/";
+api_base_url = "https://portal.saahilb.ml/";
 about_url = api_base_url + "about/";
 skills_url = api_base_url + "skills/";
 projects_url = api_base_url + "projects/";
