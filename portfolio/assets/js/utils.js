@@ -1,4 +1,4 @@
-api_base_url = "https://portal.saahilb.ml/";
+api_base_url = "https://portal.saahilb.tech/";
 about_url = api_base_url + "about/";
 skills_url = api_base_url + "skills/";
 projects_url = api_base_url + "projects/";
