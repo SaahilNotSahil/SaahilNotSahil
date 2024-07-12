@@ -1,5 +1,5 @@
 # 💫 About Me
-Heya! I'm Saahil, a Backend Developer, currently foraying into the wilderness of DevOps, AI-based Applications, and Low-level Programming. I have over three years of experience with Python and Web Development. I can build backends and APIs in Django, Flask, and Golang. Also familiar with Python automation using frameworks like Selenium, building chatbots, and building CLI tools. I also have experience with Docker. I can also work with new-age AI tools like LLMs, Langchain, and vector databases.
+Heya! I'm Saahil, a Software Engineer, currently foraying into the wilderness of DevOps and Low-level Programming. Skilled in Python, Go and Docker. Learning Rust and Assembly.
 
 
 ## 🌐 Socials:
